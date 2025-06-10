@@ -1,0 +1,4 @@
+ContainerLog
+| where LogEntry contains "error" or LogEntry contains "fail"
+| project TimeGenerated, LogEntry, ContainerID, Image, Name
+| order by TimeGenerated desc
