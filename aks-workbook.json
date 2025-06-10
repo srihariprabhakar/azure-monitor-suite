@@ -1,0 +1,44 @@
+{
+  "type": 10,
+  "content": {
+    "chartId": "workbookea9d30bf-0ff8-4d55-a6db-a3171a8bda36",
+    "version": "MetricsItem/2.0",
+    "size": 0,
+    "chartType": 2,
+    "resourceType": "microsoft.containerservice/managedclusters",
+    "metricScope": 0,
+    "resourceIds": [
+      "/subscriptions/a33818e7-d763-44b0-9540-04ae45ab1c7a/resourceGroups/610rg/providers/Microsoft.ContainerService/managedClusters/610AKS"
+    ],
+    "timeContext": {
+      "durationMs": 3600000
+    },
+    "metrics": [
+      {
+        "namespace": "microsoft.containerservice/managedclusters",
+        "metric": "microsoft.containerservice/managedclusters-Cluster Autoscaler (PREVIEW)-cluster_autoscaler_cluster_safe_to_autoscale",
+        "aggregation": 4,
+        "splitBy": null
+      },
+      {
+        "namespace": "microsoft.containerservice/managedclusters",
+        "metric": "microsoft.containerservice/managedclusters-Cluster Autoscaler (PREVIEW)-cluster_autoscaler_scale_down_in_cooldown",
+        "aggregation": 4
+      },
+      {
+        "namespace": "microsoft.containerservice/managedclusters",
+        "metric": "microsoft.containerservice/managedclusters-Cluster Autoscaler (PREVIEW)-cluster_autoscaler_unneeded_nodes_count",
+        "aggregation": 4
+      },
+      {
+        "namespace": "microsoft.containerservice/managedclusters",
+        "metric": "microsoft.containerservice/managedclusters-Cluster Autoscaler (PREVIEW)-cluster_autoscaler_unschedulable_pods_count",
+        "aggregation": 1
+      }
+    ],
+    "gridSettings": {
+      "rowLimit": 10000
+    }
+  },
+  "name": "metric - 0"
+}
