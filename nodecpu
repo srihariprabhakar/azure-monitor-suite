@@ -1,0 +1,4 @@
+Perf
+| where ObjectName == "K8SNode" and CounterName == "cpuUsageNanoCores"
+| summarize AvgCPU = avg(CounterValue) by bin(TimeGenerated, 5m), Computer
+| order by TimeGenerated desc
