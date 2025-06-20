@@ -1,0 +1,4 @@
+SecurityEvent
+| where EventID == 4625
+| summarize Count = count() by Account, IPAddress = RemoteIp, bin(TimeGenerated, 1h)
+| order by Count desc
