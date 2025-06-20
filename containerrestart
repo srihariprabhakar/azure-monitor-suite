@@ -1,0 +1,4 @@
+KubePodInventory
+| where ContainerRestartCount > 0
+| summarize Restarts = sum(ContainerRestartCount) by ContainerID, ContainerName, PodName, Namespace
+| order by Restarts desc
