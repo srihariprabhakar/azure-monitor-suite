@@ -1,0 +1,4 @@
+ContainerLog
+| where LogLevel == "error"
+| summarize ErrorCount = count() by ContainerName, PodName, Namespace, bin(TimeGenerated, 10m)
+| order by ErrorCount desc

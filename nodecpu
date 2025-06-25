@@ -1,5 +1,3 @@
 Perf
 | where ObjectName == "K8SNode" and CounterName == "cpuUsageNanoCores"
-| extend CPUPercent = CounterValue / 10000000
-| summarize AvgCPU = avg(CPUPercent) by bin(TimeGenerated, 1h), Computer
 | order by TimeGenerated desc

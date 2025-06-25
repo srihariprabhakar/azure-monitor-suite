@@ -1,0 +1,4 @@
+AppRequests
+| where duration > 5000
+| summarize Count = count(), AvgDuration = avg(duration) by bin(timestamp, 5m), operation_Name
+| order by AvgDuration desc
