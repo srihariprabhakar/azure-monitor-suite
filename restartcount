@@ -1,0 +1,4 @@
+KubePodInventory
+| where ContainerRestartCount > 0
+| summarize TotalRestarts = sum(ContainerRestartCount) by bin(TimeGenerated, 1h), Name
+| order by TimeGenerated desc
